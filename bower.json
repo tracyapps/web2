@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "web2",
+  "homepage": "http://web2.xyz",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "tracy apps <tray6@uwm.edu>"
   ],
   "license": "MIT",
   "private": true,

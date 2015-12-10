@@ -1,15 +1,15 @@
 {
-  "name": "sage",
+  "name": "web2",
   "version": "8.4.0",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "author": "tracy apps <tray6@uwm.edu>",
+  "homepage": "http://web2.xyz/",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git@github.com:tracyapps/web2.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/tracyapps/web2/issues"
   },
   "licenses": [
     {
