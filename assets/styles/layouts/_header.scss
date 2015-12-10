@@ -1,0 +1,33 @@
+header.banner {
+	position: relative;
+	background: $brand-primary;
+	
+	.container {
+		text-align: center;
+	}
+
+	a.brand {
+		@include header-font;
+		font-size: 5em;
+		color: transparentize( $orange, 0.3 );
+		text-decoration: none;
+		text-shadow: rgba( 0,0,0,0.3 ) -1px -1px 0;
+	}
+
+	nav {
+		width: 100%;
+		
+		ul {
+			display: table;
+			margin: 0 auto;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding: 0;
+			float: left;
+			position: relative;
+		}
+	}
+
+}

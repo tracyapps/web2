@@ -1,9 +1,41 @@
 // Glyphicons font path
-$icon-font-path:        "../fonts/";
+$icon-font-path: "../fonts/";
+
+// Fonts
+$open-sans-condensed: 'Open Sans Condensed', sans-serif;
+$rubik: 'Rubik', sans-serif;
 
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
 
-// Colors
-$brand-primary:         #27ae60;
+// Color defs
+$dark-grey: #252623;
+$medium-grey: #454742;
+$light-grey: #B7BDAE;
+$offwhite: #FCF8E8;
+$white: #fff;
+$grey-green: #586E5E;
+$amber-orange: #B5512B;
+$orange: #D67E4D;
+$light-orange: #F29D52;
+
+$grey-blue: #538CB5;
+$purple: #7765D6;
+
+
+
+// Theme setup
+$brand-primary: $light-orange;
+$default-text: $dark-grey;
+$default-link: $amber-orange;
+
+@mixin body-font {
+	font-family: $rubik;
+	font-weight: 300;
+}
+@mixin header-font {
+	font-family: $open-sans-condensed;
+	font-weight: 300;
+	text-transform: uppercase;
+}
