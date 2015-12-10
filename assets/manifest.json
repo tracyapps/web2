@@ -18,10 +18,12 @@
       ]
     },
     "jquery.js": {
-      "bower": ["jquery"]
+      "bower": [
+        "jquery"
+      ]
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://web2.dev"
   }
 }
