@@ -1,4 +1,8 @@
 footer {
+	margin: 5em 0 0 0;
+	padding: 2em 0 4em 0;
+	@include inverse-colors;
+
 	section.widget {
 		@include make-sm-column($sidebar-sm-columns);
 	}
