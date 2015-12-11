@@ -4,30 +4,38 @@ main.main {
 		padding: 2em 0;
 
 		&.has-image {
-			padding: 18em 0 2em 5em;
+			padding: 18em 0 2em 9em;
 			background-position: center;
 			background-size: cover;
-			margin: 0 -5em 2em -5em;
+			margin: 0 -9em 2em -9em;
 
 			h1 {
 				background: rgba( 255, 255, 255, 0.5 );
 				display: table;
 				padding: 0.1em 0.5em;
-				margin-right: 60%;
+				margin-right: 50%;
+
 			}
 		}
-	}
-}
 
-@media screen and (max-width: 600px) {
-	main.main {
-		.page-header {
-
+		@media screen and (max-width: 800px) {
 			&.has-image {
-				padding-top: 9em;
+				padding: 12em 0 2em 7em;
+				margin: 0 -7em 2em -7em;
 
 				h1 {
-					margin-right: 1.5em;
+					margin-right: 35%;
+				}
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			&.has-image {
+				padding: 9em 0 2em 5em;
+				margin: 0 -5em 2em -5em;
+
+				h1 {
+					margin-right: 2em;
 				}
 			}
 		}
