@@ -16,3 +16,9 @@
 	@extend .btn;
 	@extend .btn-default;
 }
+
+#buddypress {
+	label {
+		color: $default-text;
+	}
+}
