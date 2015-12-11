@@ -97,8 +97,9 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-	wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
+
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Rubik:300,300italic,700,700italic', false, null );
+	wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
 
 	if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
