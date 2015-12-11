@@ -26,9 +26,13 @@ $purple: #7765D6;
 
 
 // Theme setup
+$default-background: lighten( $offwhite, 5 );
 $brand-primary: $light-orange;
 $default-text: $dark-grey;
 $default-link: $amber-orange;
+
+
+// Mixins
 
 @mixin body-font {
 	font-family: $rubik;

@@ -1,6 +1,6 @@
 body {
 	color: $default-text;
-	background: lighten( $offwhite, 5 );
+	background: $default-background;
 	font-size: 1.5em;
 	@include body-font;
 }
@@ -35,4 +35,9 @@ h5 {
 }
 h6 {
 	font-size: 1.1em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
