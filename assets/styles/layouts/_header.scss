@@ -10,11 +10,13 @@ header.banner {
 	a.brand {
 		@include header-font;
 		font-size: 5em;
+		line-height: 1em;
 		color: transparentize( $orange, 0.2 );
 		text-decoration: none;
 		text-shadow: rgba( 0,0,0,0.3 ) -1px -1px 0;
 		display: block;
-		margin: 0.6em 0;
+		margin: 1em 0;
+		word-break: break-all;
 	}
 }
 
@@ -24,4 +26,12 @@ header.banner {
 	50% { background-color: $amber-orange; }
 	70% { background-color: $orange; }
 	100% { background-color: $light-orange; }
+}
+
+@media screen and (max-width: 600px) {
+	header.banner {
+		a.brand {
+			font-size: 4em;
+		}
+	}
 }
