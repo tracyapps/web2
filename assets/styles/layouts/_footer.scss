@@ -1,0 +1,5 @@
+footer {
+	section.widget {
+		@include make-sm-column($sidebar-sm-columns);
+	}
+}
