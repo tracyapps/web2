@@ -4,6 +4,6 @@ footer#site-footer {
 	@include inverse-colors;
 
 	section.widget {
-		@include make-sm-column($sidebar-sm-columns);
+		@include make-sm-column( $sidebar-sm-columns );
 	}
 }
