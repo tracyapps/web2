@@ -4,7 +4,6 @@
 <?php if ( is_front_page() ) :
 
 	// begin front page content boxes.
-
 	// storing each array
 	$box_group_1_array = get_post_meta( get_the_ID(), 'home-box-group-1', true );
 	$box_group_2_array = get_post_meta( get_the_ID(), 'home-box-group-2', true );
