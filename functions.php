@@ -11,6 +11,8 @@
  */
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
+  'lib/Custom-Meta-Boxes/custom-meta-boxes.php', // Framework for Custom Meta Boxes
+  'lib/theme-custom-meta.php', // Defining all the theme custom 'stuff'
   'lib/extras.php',    // Custom functions
   'lib/CustomClasses.php', // Custom classes
   'lib/setup.php',     // Theme setup

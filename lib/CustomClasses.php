@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: tapps
- * Date: 12/11/15
- * Time: 5:49 AM
- */
 
 
 

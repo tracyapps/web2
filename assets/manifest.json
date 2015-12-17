@@ -2,7 +2,11 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/theme.js"
+      ],
+      "vendor": [
+        "assets/scripts/vendor/iconic.min.js"
       ],
       "main": true
     },

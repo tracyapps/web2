@@ -7,7 +7,7 @@
 					'theme_location'	=> 'utility_navigation',
 					'container' 		=> '',
 					'menu_class'		=> 'nav',
-					//'fallback_cb'		=> 'wp_bootstrap_navwalker::fallback',
+					'fallback_cb'		=> 'wp_bootstrap_navwalker::fallback',
 					'walker'			=> new wp_bootstrap_navwalker()
 				] );
 			endif;
