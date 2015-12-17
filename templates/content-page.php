@@ -16,7 +16,7 @@
 	//print_r($box_group_1_array);
 	?>
 
-	<div class="row three-boxes">
+	<div class="row three-boxes clearfix">
 		<hr />
 
 		<section class="one-third box-one">
