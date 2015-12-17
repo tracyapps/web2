@@ -100,6 +100,7 @@ function display_sidebar() {
 function assets() {
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Rubik:300,300italic,700,700italic', false, null );
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', false, null );
 	wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
 
 	if ( is_single() && comments_open() && get_option( 'thread_comments' ) ) {
