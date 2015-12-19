@@ -49,7 +49,10 @@ main.main {
 }
 
 .image-overlap-featured-image {
-	margin-top: -15em;
+	margin-top: -12em;
+	@include transform( rotate( -4deg ) );
+	@include transform-origin(center center);
+	@include transform-style(preserve-3d);
 
 	@media screen and (max-width: 800px) {
 		clear: both;
