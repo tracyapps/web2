@@ -1,0 +1,70 @@
+.post-header {
+	display: block;
+	padding: 2em 0;
+
+	&.has-image {
+		padding: 11em 0 2em 0;
+		background-position: center;
+		background-size: cover;
+		margin: 0 0 2em 0;
+
+		h1 {
+			background: rgba( 255, 255, 255, 0.7 );
+			display: table;
+			padding: 0.1em 0.5em;
+			margin-right: 2em;
+			text-shadow: rgba( 255,255,255,0.4 ) 1px 1px 0;
+
+		}
+
+		time,
+		.byline {
+			margin-left: 2em;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		&.has-image {
+			padding: 12em 0 2em 7em;
+			margin: 0 -7em 2em -7em;
+
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		&.has-image {
+			padding: 9em 0 2em 5em;
+			margin: 0 -5em 2em -5em;
+
+		}
+	}
+}
+article {
+	clear: both;
+}
+.blog {
+	article {
+		min-height: 60px;
+		padding: 2em 0;
+		border-bottom: 1px solid #ddd;
+		overflow: hidden;
+	}
+}
+
+.post-thumbnail-column {
+	@include make-sm-column( 3 );
+	img {
+		border: 1px solid transparentize( $default-link, 0.5 );
+		padding: 2px;
+		background-color: #fff;
+
+		&:hover {
+			border: 1px solid $default-link;
+			background-color: $default-link;
+
+		}
+	}
+}
+.post-excerpt-column {
+	@include make-sm-column( $main-sm-columns - 3 );
+}

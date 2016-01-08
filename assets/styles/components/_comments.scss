@@ -1,3 +1,8 @@
+#comments {
+	margin: 5em 0;
+	border-top: 1px solid #ddd;
+}
+
 .comment-list {
 	@include list-unstyled;
 }
@@ -20,4 +25,24 @@
 .comment-form input[type="submit"] {
 	@extend .btn;
 	@extend .btn-primary;
+}
+.comment-list {
+	.comment {
+		padding: 2em 1em;
+
+		&.depth-1 {
+			border-bottom: 1px solid #ddd;
+		}
+
+		&.odd {
+			background: rgba( 100, 100, 100, 0.06 );
+		}
+		&.even {
+			background: #fff;
+		}
+
+		.comment-content {
+			padding: 1em 0 1em 1em;
+		}
+	}
 }

@@ -1,6 +1,14 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class(); ?>>
-		<header>
+		<header class="post-header<?php
+		if ( has_post_thumbnail() && ! is_home() ) :
+			$the_image_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
+			echo ' has-image" style="background-image: url(' . esc_url( $the_image_url, 'web2' ) . ');"';
+		else :
+			echo '"';
+		endif;
+		?>
+		>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php get_template_part( 'templates/entry-meta' ); ?>
 		</header>
