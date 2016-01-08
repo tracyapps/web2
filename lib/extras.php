@@ -29,7 +29,20 @@ add_filter( 'body_class', __NAMESPACE__ . '\\body_class' );
  * Clean up the_excerpt()
  */
 function excerpt_more() {
-	return ' &hellip; <a href="' . get_permalink() . '">' . __( 'Continued', 'sage' ) . '</a>';
+	return ' &hellip; <a href="' . get_permalink() . '" class="read-more">' . __( 'Continued &raquo;', 'sage' ) . '</a>';
 }
 
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
+
+
+
+
+add_filter( 'allowed_redirect_hosts', 'allow_ms_parent_redirect' );
+function allow_ms_parent_redirect($allowed)
+{
+	$allowed[] = 'web2.xyz';
+	return $allowed;
+} ?>
+
+<a href="<?php echo wp_logout_url( 'http://web2.xyz' ); ?>">Logout</a>
+<?php
