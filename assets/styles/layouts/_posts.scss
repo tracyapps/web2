@@ -68,3 +68,15 @@ article {
 .post-excerpt-column {
 	@include make-sm-column( $main-sm-columns - 3 );
 }
+
+img.styled {
+	border: 1px solid transparentize( $default-link, 0.5 );
+	padding: 2px;
+	background-color: #fff;
+
+	&:hover {
+		border: 1px solid $default-link;
+		background-color: $default-link;
+
+	}
+}
