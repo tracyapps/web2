@@ -66,6 +66,13 @@ main.main {
 }
 
 .one-half {
+
+	.post-thumbnail-column {
+		width: 33%;
+	}
+	.post-excerpt-column {
+		width: 65%;
+	}
 	.ai1ec-stream-view .ai1ec-event {
 		height: 50px;
 	}
@@ -75,6 +82,12 @@ main.main {
 	.ai1ec-stream-view .ai1ec-event-avatar.ai1ec-portrait img {
 		height: 50px !important;
 		width: auto !important;
+	}
+
+	.ai1ec-title-buttons.ai1ec-btn-toolbar,
+	.ai1ec-views-dropdown.ai1ec-btn-group.ai1ec-pull-right,
+	.ai1ec-stream-view .ai1ec-date-title {
+		display: none;
 	}
 }
 
