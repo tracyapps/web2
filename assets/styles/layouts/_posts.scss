@@ -42,12 +42,55 @@
 article {
 	clear: both;
 }
-.blog{
+.blog,
+.archive {
+	.page-header {
+		margin-bottom: 0;
+	}
+
 	article {
 		min-height: 60px;
 		padding: 2em 0;
 		border-bottom: 1px solid #ddd;
 		overflow: hidden;
+		position: relative;
+
+		.post-category-label {
+			position: absolute;
+			top: 0px;
+			left: 35%;
+			width: 30%;
+			text-align: center;
+			display: inline-block;
+			background-color: $dark-grey;
+			font-size: 0.8em;
+
+			a {
+				color: $offwhite;
+
+				&:hover,
+				&:focus {
+					color: $white;
+				}
+			}
+
+		}
+
+		&.category-announcements {
+			.post-category-label {
+				background-color: $amber-orange;
+			}
+		}
+		&.category-assignments {
+			.post-category-label {
+				background-color: $purple;
+			}
+		}
+		&.category-other-stuff {
+			.post-category-label {
+				background-color: $grey-blue;
+			}
+		}
 	}
 }
 .one-half {
@@ -62,6 +105,10 @@ article {
 			}
 		}
 	}
+}
+
+.post-category-label {
+	display: none;
 }
 
 .post-thumbnail-column {
