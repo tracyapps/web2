@@ -33,9 +33,3 @@ function excerpt_more() {
 }
 
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
-
-
-add_filter( 'logout_url', 'web2_logout_url' );
-function web2_logout_url( $url ) {
-	return 'http://web2.xyz/?a=logout';
-}
