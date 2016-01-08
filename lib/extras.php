@@ -39,20 +39,3 @@ add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
  * buddypress things
  */
 
-/* Prevent logged out users from accessing bp activity page */
-function nonreg_visitor_redirect() {
-	global $bp;
-	if ( bp_is_activity_component()
-		|| bp_is_groups_component()
-		|| bp_is_group_forum()
-		|| bp_is_page( BP_MEMBERS_SLUG )
-		|| bp_is_profile_component()
-		|| bp_is_forums_component()
-
-		&& !is_user_logged_in()
-	) {
-			wp_redirect( get_option('siteurl') . '/register' );
-		}
-	};
-
-add_filter( 'get_header', 'nonreg_visitor_redirect' ,1 );
