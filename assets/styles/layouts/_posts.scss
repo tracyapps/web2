@@ -42,12 +42,25 @@
 article {
 	clear: both;
 }
-.blog {
+.blog{
 	article {
 		min-height: 60px;
 		padding: 2em 0;
 		border-bottom: 1px solid #ddd;
 		overflow: hidden;
+	}
+}
+.one-half {
+	article {
+		min-height: 60px;
+		padding: 2em 0;
+		overflow: hidden;
+
+		.post-excerpt-column {
+			.entry-title {
+				margin-top: 0;
+			}
+		}
 	}
 }
 

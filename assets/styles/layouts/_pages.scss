@@ -64,3 +64,26 @@ main.main {
 .ai1ec-btn-group > .ai1ec-btn-sm {
 	font-size: 0.9em;
 }
+
+.announcements-box {
+	position: relative;
+	margin: 4em 0 0 0;
+	padding: 0 0.8em 1em 0.8em;
+
+	.announcements-title {
+		display: inline-block;
+		background: $default-text;
+		color: $default-background;
+		padding: 0.4em 1em;
+		font-size: 1.8em;
+		margin: -2em 0 0 -1em;
+	}
+
+	.post-thumbnail-column {
+		float: right;
+		text-align: right;
+	}
+}
+.important {
+	border: 1px solid $amber-orange;
+}

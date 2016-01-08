@@ -13,7 +13,55 @@
 
 	$icon_dir = get_template_directory_uri() . '/assets/icons/';
 
-	//print_r($box_group_1_array);
+	?>
+
+	<div class="row clearfix">
+		<div class="one-half">
+			<h3>Latest <a href="/category/assignments/">Assignment</a></h3>
+
+			<?php
+			$args = array(
+				'post_type' 	=> 'post',
+				'category_name'	=> 'assignments',
+				'posts_per_page'=> 1,
+			);
+			$assignments_query = new WP_Query( $args );
+			if ( $assignments_query->have_posts() ) :
+				while ( $assignments_query->have_posts() ) : $assignments_query->the_post();
+					get_template_part( 'templates/content' );
+				endwhile;
+			endif;
+			wp_reset_postdata();
+			?>
+		</div>
+		<div class="one-half">
+			<h3>Calendar</h3>
+			<?php echo do_shortcode( '[ai1ec view="stream" events_limit="4"]' ); ?>
+		</div>
+	</div>
+
+	<?php
+	$sticky = get_option( 'sticky_posts' );
+	$args2 = array(
+		'post_type' 	=> 'post',
+		'category_name'	=> 'announcements',
+		'posts_per_page'=> 1,
+		'post__in'		=> $sticky,
+		'ignore_sticky_posts' => 1
+	);
+	$announcements_query = new WP_Query( $args2 );
+	if ( $sticky[0] ) : ?>
+		<div class="row announcements-box important clearfix">
+			<h3 class="announcements-title">Announcement</h3>
+			<?php
+
+			while ( $announcements_query->have_posts() ) : $announcements_query->the_post();
+				get_template_part( 'templates/content' );
+			endwhile;
+			?>
+		</div>
+	<?php endif;
+	wp_reset_postdata();
 	?>
 
 	<div class="row three-boxes clearfix">
