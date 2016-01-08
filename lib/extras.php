@@ -48,12 +48,11 @@ function nonreg_visitor_redirect() {
 		|| bp_is_page( BP_MEMBERS_SLUG )
 		|| bp_is_profile_component()
 		|| bp_is_forums_component()
-		|| bbp_is_single_forum()
-		|| bbp_is_single_topic()
+
+		&& !is_user_logged_in()
 	) {
-		if(!is_user_logged_in()) { //just a visitor and not logged in
 			wp_redirect( get_option('siteurl') . '/register' );
 		}
-	}
-}
+	};
+
 add_filter( 'get_header', 'nonreg_visitor_redirect' ,1 );
