@@ -42,7 +42,4 @@ function allow_ms_parent_redirect($allowed)
 {
 	$allowed[] = 'web2.xyz';
 	return $allowed;
-} ?>
-
-<a href="<?php echo wp_logout_url( 'http://web2.xyz' ); ?>">Logout</a>
-<?php
+} 
