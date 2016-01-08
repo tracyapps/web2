@@ -65,6 +65,19 @@ main.main {
 	font-size: 0.9em;
 }
 
+.one-half {
+	.ai1ec-stream-view .ai1ec-event {
+		height: 50px;
+	}
+	.ai1ec-event-avatar img {
+		min-height: 50px;
+	}
+	.ai1ec-stream-view .ai1ec-event-avatar.ai1ec-portrait img {
+		height: 50px !important;
+		width: auto !important;
+	}
+}
+
 .announcements-box {
 	position: relative;
 	margin: 4em 0 0 0;
