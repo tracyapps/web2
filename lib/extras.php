@@ -36,10 +36,3 @@ add_filter( 'excerpt_more', __NAMESPACE__ . '\\excerpt_more' );
 
 
 
-
-add_filter( 'allowed_redirect_hosts', 'allow_ms_parent_redirect' );
-function allow_ms_parent_redirect($allowed)
-{
-	$allowed[] = 'web2.xyz';
-	return $allowed;
-} 
