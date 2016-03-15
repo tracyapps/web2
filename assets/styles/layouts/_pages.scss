@@ -66,19 +66,19 @@ main.main {
 }
 
 ol {
-	li {
+	li.large-point {
+		font-size: 1.2em;
+		padding-top: 1em;
+		padding-bottom: 0.4em;
+
 		li {
 			padding-top: 0.4em;
 			padding-bottom: 0.4em;
+			font-size: 0.8em;
 		}
 	}
 }
 
-ol > li.large-point {
-	font-size: 1.2em;
-	padding-top: 1em;
-	padding-bottom: 0.4em;
-}
 
 .one-half {
 
