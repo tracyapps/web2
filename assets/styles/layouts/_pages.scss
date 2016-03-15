@@ -65,6 +65,21 @@ main.main {
 	font-size: 0.9em;
 }
 
+ol {
+	li {
+		li {
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+		}
+	}
+}
+
+li.large-point {
+	font-size: 1.1em;
+	padding-top: 1em;
+	padding-bottom: 0.4em;
+}
+
 .one-half {
 
 	.post-thumbnail-column {
