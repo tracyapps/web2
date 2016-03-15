@@ -68,14 +68,14 @@ main.main {
 ol {
 	li {
 		li {
-			padding-top: 0.3em;
-			padding-bottom: 0.3em;
+			padding-top: 0.4em;
+			padding-bottom: 0.4em;
 		}
 	}
 }
 
-li.large-point {
-	font-size: 1.1em;
+ol > li.large-point {
+	font-size: 1.2em;
 	padding-top: 1em;
 	padding-bottom: 0.4em;
 }
