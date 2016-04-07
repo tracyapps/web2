@@ -104,7 +104,7 @@ function web2_custom_meta_front_page( array $meta_boxes ) {
 					'type'	=> 'post_select',
 					'use_ajax'=> true,
 					'query'	=> array(
-						'post_type'	=> 'page'
+						'post_type'	=> array( 'page', 'post' )
 					),
 					'cols'	=> 4
 				),
