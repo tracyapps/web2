@@ -46,6 +46,17 @@ main.main {
 .three-boxes {
 	padding: 2em 0;
 
+	.box-three {
+		border: 1px solid #B5512B;
+		padding: 0 2em 2em 2em;
+		background: repeating-linear-gradient(
+						-45deg,
+						transparentize( $light-orange, 0.9 ),
+						transparentize( $light-orange, 0.9 ) 10px,
+						transparentize( $orange, 0.9 ) 10px,
+						transparentize( $orange, 0.9 ) 20px
+		);
+	}
 }
 
 .image-overlap-featured-image {
