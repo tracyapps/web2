@@ -13,8 +13,8 @@
 
 	$icon_dir = get_template_directory_uri() . '/assets/icons/';
 
-	?>
-
+	/*
+	
 	<div class="row clearfix">
 		<div class="one-half">
 			<h3>Latest <a href="/category/assignments/">Assignment</a></h3>
@@ -39,6 +39,9 @@
 			<?php echo do_shortcode( '[ai1ec view="stream" events_limit="4"]' ); ?>
 		</div>
 	</div>
+
+	*/
+	?>
 
 	<?php
 	$sticky = get_option( 'sticky_posts' );
